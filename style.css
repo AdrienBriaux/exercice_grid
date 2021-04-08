@@ -1,29 +1,83 @@
 .heb1.grid-container {
     display              : grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 50px;
-    border: 3px solid red;
+    grid-gap             : 50px;
+    border               : 3px solid red;
+    padding              : 50px;
 }
-.grid-container2
-{
-    display: grid;
-    grid-template-rows: auto;
-    grid-gap: 50px;
-    border: 3px solid black;
-    justify-content: center;
-}
-.grid-container3
-{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    border: 3px solid hotpink;
-    text-align: center;
-    grid-gap: 50px;
-}
-section
-{
-    display: grid;
-    border: 3px solid green;
-    grid-template-columns: auto auto;
 
+.grid-container2 {
+    display           : grid;
+    grid-template-rows: auto;
+    grid-gap          : 50px;
+    border            : 3px solid black;
+    justify-content   : center;
+    padding           : 50px;
+    margin-left       : 50px;
+}
+
+.grid-container3 {
+    display              : grid;
+    grid-template-columns: auto auto auto auto;
+    border               : 3px solid hotpink;
+    text-align           : center;
+    grid-gap             : 50px;
+    padding              : 50px;
+}
+
+section {
+    display              : grid;
+    border               : 3px solid green;
+    grid-template-columns: auto auto;
+    justify-content      : space-between;
+
+}
+
+body {
+    padding: 100px;
+}
+
+@media all and (max-width: 1440px) {
+
+    .heb1.grid-container,
+    .grid-container3 {
+        grid-template-columns: auto auto;
+    }
+
+    .grid-container3 {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media all and (max-width: 1240px) {
+
+    .heb1.grid-container {
+        grid-template-columns: auto;
+    }
+
+    .grid-container3 {
+        grid-template-columns: auto auto;
+    }
+}
+@media all and (max-width: 480px)
+{
+    body
+    {
+        padding: 0;
+    }
+    .grid-container3
+    {
+        grid-template-columns: auto;
+    }
+    section
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .grid-container2
+    {
+        margin-left: 0;
+    }
+    
 }
