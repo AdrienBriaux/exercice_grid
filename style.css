@@ -13,7 +13,7 @@
     border            : 3px solid black;
     justify-content   : center;
     padding           : 50px;
-    margin-left       : 50px;
+    margin-left: 30px;
 }
 
 .grid-container3 {
@@ -39,8 +39,7 @@ body {
 
 @media all and (max-width: 1440px) {
 
-    .heb1.grid-container,
-    .grid-container3 {
+    .heb1.grid-container {
         grid-template-columns: auto auto;
     }
 
@@ -58,26 +57,43 @@ body {
     .grid-container3 {
         grid-template-columns: auto auto;
     }
-}
-@media all and (max-width: 480px)
-{
-    body
-    {
-        padding: 0;
-    }
-    .grid-container3
-    {
-        grid-template-columns: auto;
-    }
-    section
-    {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
     .grid-container2
     {
+        grid-template-columns: 500px;
+        align-items: center;
+    }
+    .pop1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+@media all and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    .grid-container3 {
+        grid-template-columns: auto;
+    }
+
+    section {
+        display  : flex;
+        flex-wrap: wrap;
+        width    : 100%;
+    }
+
+    .grid-container2 {
         margin-left: 0;
     }
-    
+
+    section .grid-container2 {
+        width: 100%;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 100%;
+    }
 }
