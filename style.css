@@ -13,7 +13,7 @@
     border            : 3px solid black;
     justify-content   : center;
     padding           : 50px;
-    margin-left: 30px;
+    margin-left       : 30px;
 }
 
 .grid-container3 {
@@ -29,8 +29,6 @@ section {
     display              : grid;
     border               : 3px solid green;
     grid-template-columns: auto auto;
-    justify-content      : space-between;
-
 }
 
 body {
@@ -57,16 +55,16 @@ body {
     .grid-container3 {
         grid-template-columns: auto auto;
     }
-    .grid-container2
-    {
-        grid-template-columns: 500px;
-        align-items: center;
+
+    .grid-container2 {
+        grid-template-columns: auto;
+        align-items          : center;
     }
-    .pop1
-    {
-        display: flex;
+
+    .pop1 {
+        display        : flex;
         justify-content: center;
-        align-items: center
+        align-items    : center
     }
 }
 
